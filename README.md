@@ -69,28 +69,7 @@ Use SQL to generate insights into:
 
 ---
 
-## 📂 Repository Structure
-
-```bash
-data-warehouse-project/
-│
-├── datasets/                  # Raw ERP & CRM datasets
-├── docs/                      # Architecture, ETL flows, metadata
-│   ├── data_catalog.md
-│   ├── data_architecture.drawio
-│   ├── data_models.drawio
-│   ├── data_flow.drawio
-│   └── naming-conventions.md
-├── scripts/                   # SQL scripts
-│   ├── bronze/
-│   ├── silver/
-│   └── gold/
-├── tests/                     # Validation scripts
-├── README.md                  # This file
-├── LICENSE                    # MIT License
-├── .gitignore
-└── requirements.txt           # Software requirements
-## 👨‍💻 About Me
+# 👨‍💻 About Me
 
 Hi, I'm **Ahmad Ali** — a passionate and self-driven **Data Analyst** who transforms raw data into actionable insights. I specialize in:
 
