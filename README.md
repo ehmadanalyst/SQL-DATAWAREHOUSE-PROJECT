@@ -1,115 +1,112 @@
+# 📊 Data Warehouse and Analytics Project
 
-# Data Warehouse and Analytics Project
-
-Welcome to the **Data Warehouse and Analytics Project** repository! 🚀  
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+Welcome to the **Data Warehouse and Analytics Project**! 🚀  
+This portfolio project demonstrates the complete lifecycle of a data warehousing and analytics solution—covering architecture design, ETL pipelines, data modeling, and insights reporting.
 
 ---
+
 ## 🏗️ Data Architecture
 
-The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
+The solution is based on the **Medallion Architecture**, broken down into three layers:
+
+- **Bronze Layer**: Raw data ingested from CSV files into SQL Server.
+- **Silver Layer**: Cleansed and standardized data ready for modeling.
+- **Gold Layer**: Business-ready star schema designed for reporting and analysis.
+
 ![Data Architecture](docs/data_architecture.png)
 
-1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
-2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
-3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
-
 ---
+
 ## 📖 Project Overview
 
-This project involves:
+### ✅ Key Components:
+- **Modern Data Architecture** using SQL Server
+- **ETL Pipelines** for raw-to-clean transformations
+- **Star Schema** design (Fact and Dimension tables)
+- **SQL Reporting** for business insights
 
-1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
-2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
-3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
-4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
-
-🎯 This repository is an excellent resource for professionals and students looking to showcase expertise in:
-- SQL Development
-- Data Architect
+### 🎯 Skills Demonstrated:
+- SQL Development  
 - Data Engineering  
-- ETL Pipeline Developer  
+- ETL Design  
 - Data Modeling  
 - Data Analytics  
 
 ---
 
-## 🛠️ Important Links & Tools:
+## 🛠️ Tools & Resources
 
-Everything is for Free!
-- **[Datasets](datasets/):** Access to the project dataset (csv files).
-- **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads):** Lightweight server for hosting your SQL database.
-- **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16):** GUI for managing and interacting with databases.
-- **[Git Repository](https://github.com/):** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
-- **[DrawIO](https://www.drawio.com/):** Design data architecture, models, flows, and diagrams.
-- **[Notion](https://www.notion.com/):** All-in-one tool for project management and organization.
-- **[Notion Project Steps](https://thankful-pangolin-2ca.notion.site/SQL-Data-Warehouse-Project-16ed041640ef80489667cfe2f380b269?pvs=4):** Access to All Project Phases and Tasks.
+All tools used are free:
+
+- 📂 [Datasets](datasets/): CSV files from ERP and CRM
+- 🗄️ [SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+- 🧠 [SSMS](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
+- 🛠️ [DrawIO](https://www.drawio.com/): Architecture & flow diagrams
+- 📘 [Notion Project Board](https://thankful-pangolin-2ca.notion.site/SQL-Data-Warehouse-Project-16ed041640ef80489667cfe2f380b269?pvs=4)
 
 ---
 
 ## 🚀 Project Requirements
 
-### Building the Data Warehouse (Data Engineering)
+### 📦 Data Engineering
 
-#### Objective
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
+**Objective:**  
+Create a SQL-based data warehouse for sales analytics.
 
-#### Specifications
-- **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
-- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
-- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
-- **Scope**: Focus on the latest dataset only; historization of data is not required.
-- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+**Specifications:**
+- Import ERP and CRM data from CSV
+- Clean and integrate data
+- Model business-ready star schema
+- Document the entire data structure
+
+### 📊 Data Analysis & Reporting
+
+**Objective:**  
+Use SQL to generate insights into:
+- 🧍 Customer Behavior  
+- 📦 Product Performance  
+- 💸 Sales Trends  
 
 ---
-
-### BI: Analytics & Reporting (Data Analysis)
-
-#### Objective
-Develop SQL-based analytics to deliver detailed insights into:
-- **Customer Behavior**
-- **Product Performance**
-- **Sales Trends**
-
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
-
-For more details, refer to [docs/requirements.md](docs/requirements.md).
 
 ## 📂 Repository Structure
-```
+
+```bash
 data-warehouse-project/
 │
-├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
-│
-├── docs/                               # Project documentation and architecture details
-│   ├── etl.drawio                      # Draw.io file shows all different techniquies and methods of ETL
-│   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
-│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
-│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
-│   ├── data_models.drawio              # Draw.io file for data models (star schema)
-│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
-│
-├── scripts/                            # SQL scripts for ETL and transformations
-│   ├── bronze/                         # Scripts for extracting and loading raw data
-│   ├── silver/                         # Scripts for cleaning and transforming data
-│   ├── gold/                           # Scripts for creating analytical models
-│
-├── tests/                              # Test scripts and quality files
-│
-├── README.md                           # Project overview and instructions
-├── LICENSE                             # License information for the repository
-├── .gitignore                          # Files and directories to be ignored by Git
-└── requirements.txt                    # Dependencies and requirements for the project
-```
+├── datasets/                  # Raw ERP & CRM datasets
+├── docs/                      # Architecture, ETL flows, metadata
+│   ├── data_catalog.md
+│   ├── data_architecture.drawio
+│   ├── data_models.drawio
+│   ├── data_flow.drawio
+│   └── naming-conventions.md
+├── scripts/                   # SQL scripts
+│   ├── bronze/
+│   ├── silver/
+│   └── gold/
+├── tests/                     # Validation scripts
+├── README.md                  # This file
+├── LICENSE                    # MIT License
+├── .gitignore
+└── requirements.txt           # Software requirements
+## 👨‍💻 About Me
+
+Hi, I'm **Ahmad Ali** — a passionate and self-driven **Data Analyst** who transforms raw data into actionable insights. I specialize in:
+
+- 🧠 **SQL Development**
+- 📊 **Data Visualization (Power BI, Excel)**
+- 🔁 **ETL Pipelines & Data Cleaning**
+- 🏗️ **Data Modeling (Star Schema, Snowflake)**
+- 📈 **Analytics & Reporting for Decision Making**
+
+### 🎯 My Mission:
+To help businesses make smarter decisions by building efficient data systems and dashboards that turn data into growth opportunities.
+
+### 📚 A Little Background:
+- 🎓 Currently pursuing a **Bachelor's in Computer Science**
+- 📜 Certified in **Data Analysis**, **Excel**, and **Power BI**
+- 🔨 Working on freelance and personal projects to build real-world solutions
+- 🤝 Open to **internships**, **freelance work**, and **collaborations**
+
 ---
-
-
-## 🛡️ License
-
-This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
-
-## 🌟 About Me
-
-Hi there! I'm **Baraa Khatib Salkini**, also known as **Data With Baraa**. I’m an IT professional and passionate YouTuber on a mission to share knowledge and make working with data enjoyable and engaging!
-
-Let's stay in touch! Feel free to connect with me on the following platforms:
